@@ -31,6 +31,24 @@ body {
 
 .fas {
   color: rgba(21, 204, 228, 0.678);
+  font-size: 30px;
+}
+
+.about-and-links {
+  display: flex;
+
+}
+
+.about-btn {
+  text-align: end;
+}
+
+.about-btn a {
+  color: lightgrey;
+  text-decoration: none;
+  margin-right: 25px;
+  margin-bottom: 0px;
+  text-align: end;
 }
 
 /* ---------banner------------------ */
@@ -68,7 +86,7 @@ body {
   font-weight: bold;
   color: white;
   text-align: center;
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 10px;
 }
 
@@ -116,6 +134,10 @@ body {
 }
 
 /* ------------------------------------------------------------------ */
+.carousel {
+  margin-bottom: 50px;
+  margin-top: 20px
+}
 
 .carousel-inner > .carousel-item > img {
   height: 650px;
@@ -143,6 +165,23 @@ body {
   text-align: left;
 }
 
+.img1 {
+  background: url('costa-brava-landing.jpg');
+  height: 550px;
+  background-size: cover;
+}
+
+.img2 {
+  background: url('costa-brava-2-35mm.jpg');
+  height: 550px;
+  background-size: cover;
+}
+
+.img3 {
+  background: url('sagrada-35mm.jpg');
+  height: 550px;
+  background-size: cover;
+}
 
 /* ---------------card pictures-------------- */
 
@@ -213,4 +252,43 @@ body {
   background-color: rgba(26, 26, 26, 0.562);
   color: azure;
   height: 120px;
+}
+
+
+/*--------------------index page----------------*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

@@ -1,1 +1,46 @@
-<h1>this is index!!</h1>
+<div class="container">
+
+  <nav class="navbar sticky-top">
+    <div class="navbar-brand">
+      <i class="fas fa-camera"></i>&ensp; Photoport
+    </div>
+    <div class="about-and-links">
+      <div class="about-btn">
+        <%= link_to 'About', about_path %>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/chirinom/" target="-blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/chirinom" target="-blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/mjchirino/" target="-blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="column">
+      <%= image_tag "cambutal.jpg" %>
+      <%= image_tag "costa-brava-2-35mm.jpg" %>
+      <%= image_tag "morrillo.jpg" %>
+    </div>
+    <div class="column">
+      <%= image_tag "chepillo.png" %>
+      <%= image_tag "costa-brava-35mm.jpg" %> 
+      <%= image_tag "costa-brava-3.jpg" %> 
+    </div>
+    <div class="column">
+      <%= image_tag "costa-brava-landing.jpg" %>
+      <%= image_tag "sagrada-35mm.jpg" %>
+    </div>
+    <div class="column">
+      <%= image_tag "grillo.jpg" %>
+      <%= image_tag "Mazeti.JPG" %>
+    </div>
+  </div>
+
+</div>

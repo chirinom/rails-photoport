@@ -1,21 +1,25 @@
 
 <div class="container">  
   <nav class="navbar sticky-top">
-    <a class="navbar-brand">
-      <img src="images/costa-brava-landing.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    <div class="navbar-brand">
+      <i class="fas fa-camera"></i>&ensp;
       Photoport
-    </a>
-    <%= link_to 'About', about_path %>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/chirinom/" target="-blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/chirinom" target="-blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.instagram.com/mjchirino/" target="-blank">
-        <i class="fab fa-instagram"></i>
-      </a>
+    </div>
+    <div class="about-and-links">
+      <div class="about-btn">
+        <%= link_to 'About', about_path %>
+      </div>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/chirinom/" target="-blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/chirinom" target="-blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/mjchirino/" target="-blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -24,11 +28,12 @@
     <div class="headers">
       <h1>Miguel Chirino</h1>
       <h2>Photo Portfolio</h2>
+      <%= link_to 'Go to Catalogue', index_path %>
     </div>
   </div>
 
   <div class="categories-header">
-    <h2>My Photography styles and preferences</h2>
+    <h2>Photography styles and preferences</h2>
     <h6>Nature driven and vintage looks</h6>
   </div>
 
@@ -61,53 +66,62 @@
   <div class="divide-line">
   </div>
 
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="img1">
-            <div class="carousel-caption pic1-text d-none d-md-block">
-              <h4>Enjoy the moment</h4>
-              <p>Picture of my brother and friend with its new adopted dog. <br> It was his first time in a beach and also mine <br> in la Costa Brava</p>
-            </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption pic2-text d-none d-md-block">
-              <h4>Costa Brava Joy</h4>
-              <p>Very beautiful cala in la Costa Brava in Spain. <br> Many kids and families came during <br>the day to enjoy the spot</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-caption pic3-text d-none d-md-block">
-              <h4>Mallorca 470</h4>
-              <p>This photo was taken a week before starting my coding bootcamp in barcelona</p>
-            </div>
+  <div class="categories-header">
+    <h2>Recently added</h2>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="img1">
+          <div class="carousel-caption pic1-text d-none d-md-block">
+            <h4>Enjoy the moment</h4>
+            <p>Picture of my brother and friend with its new adopted dog. <br> It was his first time in a beach and also mine <br> in la Costa Brava</p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-
-
-  <div class="categories-header">
-    <h2>Water Sports</h2>
-    <h6>Surfing in both pacific and caribbean coasts of Panama</h6>
+      <div class="carousel-item">
+        <div class="img2">
+          <div class="carousel-caption pic2-text d-none d-md-block">
+            <h4>Costa Brava Joy</h4>
+            <p>Very beautiful cala in la Costa Brava in Spain. <br> Many kids and families came during <br>the day to enjoy the spot</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="img3">
+          <div class="carousel-caption pic3-text d-none d-md-block">
+            <h4>Mallorca 470</h4>
+            <p>This photo was taken a week before starting my coding bootcamp in barcelona</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 
 </div>
+
+
+  <%# <div class="categories-header">
+    <h2>Water Sports</h2>
+    <h6>Surfing in both pacific and caribbean coasts of Panama</h6>
+  </div> %>
+
  
-<div class="container-fluid">
+<%# <div class="container-fluid">
   <div class="col">
     <div class="row d-flex justify-content-around">
       <div class="img-card1">
@@ -136,6 +150,6 @@
       </div>  
     </div>   
   </div>
-</div>
+</div> %>
     
     <div class="card-footert"></div>
