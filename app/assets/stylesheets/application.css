@@ -69,14 +69,25 @@ body {
   position: absolute;
   right: 80px;
   top: 40px;
+  text-align: center;
 }
 
 .headers h1 {
   font-size: 60px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: rgb(33, 37, 49)
 }
 
-.headers h2 {
-  font-size: 45px;
+.headers h4 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: rgba(33, 37, 49, 0.733)
+}
+
+.headers a {
+  color: white;
   text-align: center;
 }
 
@@ -88,6 +99,10 @@ body {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 10px;
+}
+
+.categories-header h6 {
+  color:lightgrey;
 }
 
 
@@ -151,24 +166,21 @@ body {
   position: relative
 }
 
-.pic1-text {
-  position: absolute;
-  left: 17px;
-  bottom: 75px;
-  text-align: left;
-}
-
-.pic2-text {
-  position: absolute;
-  left: 629px;
-  bottom: 35px;
-  text-align: left;
-}
-
 .img1 {
   background: url('costa-brava-landing.jpg');
   height: 550px;
   background-size: cover;
+}
+
+.img1 > .carousel-caption {
+  position: absolute;
+  right: -30%;
+  bottom: 60%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 .img2 {
@@ -177,10 +189,32 @@ body {
   background-size: cover;
 }
 
+.img2 > .carousel-caption {
+  position: absolute;
+  right: -30%;
+  bottom: 0%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
 .img3 {
   background: url('sagrada-35mm.jpg');
   height: 550px;
   background-size: cover;
+}
+
+.img3 > .carousel-caption {
+  position: absolute;
+  left: -15%;
+  bottom: 8%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
 }
 
 /* ---------------card pictures-------------- */
