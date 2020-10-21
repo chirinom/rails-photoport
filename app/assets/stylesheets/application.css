@@ -91,6 +91,40 @@ body {
   text-align: center;
 }
 
+.go-to-btn {
+  margin-top: 10px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: rgba(21, 221, 228, 0.678);
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 270px;
+}
+
+.go-to-btn:hover {
+  margin-top: 10px;
+  border-radius: 4px;
+  border-style: none;
+  background-color: rgba(21, 204, 228, 0.678);
+  color: white;
+  font-weight: bold;
+  height: 35px;
+  width: 270px;
+}
+
+.go-to-btn a:hover {
+  border-radius: 4px;
+  border-style: none;
+  background-color: rgba(21, 204, 228, 0.678);
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  width: 180px;
+  text-decoration: none;
+}
+
+
 /*---------categories headers-----*/
 .categories-header {
   font-family: 'DM Sans', sans-serif;
@@ -148,7 +182,7 @@ body {
     margin-right: 150px;
 }
 
-/* ------------------------------------------------------------------ */
+/* ----------------------------carousel-------------------------------------- */
 .carousel {
   margin-bottom: 50px;
   margin-top: 20px
@@ -219,14 +253,14 @@ body {
 
 /* ---------------card pictures-------------- */
 
-.img-card1 {
+/* .img-card1 {
   background: url('cambutal.jpg');
   background-size: cover;
   margin-top: 50px;
   margin-bottom: 50px;
   border-style: none;
-  height: 400px;
-  width: 600px;
+  height: 300px;
+  width: 500px;
   border-radius: 4px;
   color: transparent
 }
@@ -246,8 +280,8 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   border-style: none;
-  height: 400px;
-  width: 600px;
+  height: 300px;
+  width: 500px;
   border-radius: 4px;
   color: transparent
 }
@@ -266,8 +300,8 @@ body {
   margin-top: 50px;
   margin-bottom: 50px;
   border-style: none;
-  height: 400px;
-  width: 600px;
+  height: 300px;
+  width: 500px;
   border-radius: 4px;
   color: transparent
 }
@@ -278,7 +312,7 @@ body {
   text-align: center;
   background-image: none;
   padding-top: 100px;
-}
+} */
 
 /* ------------------footer---------- */
 
@@ -299,8 +333,8 @@ body {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 25%;
-  max-width: 25%;
+  flex: 33%;
+  max-width: 33%;
   padding: 0 4px;
 }
 
